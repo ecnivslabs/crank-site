@@ -123,14 +123,14 @@
           </div>
           <div class="termbody">
             <pre class="termpre"><span class="dim">  noticed a pattern &middot; last 8 calls</span>
-<span class="glyph-warn">●</span> Same YouTube Data API call hand-built 3 times: OAuth headers, endpoint, response parsing.
-<span class="glyph-ok">●</span> Writing a real client for it instead of a fourth copy-paste.
+<span class="glyph-warn">●</span> Same YouTube API call built by hand 3 times.
+<span class="glyph-ok">●</span> Writing a real client instead of a fourth copy-paste.
 <span class="glyph-ok">●</span> patch(author --seam tool --name youtube-status)  <span class="dim">0.6s</span>
 <span class="glyph-ok">●</span> boundary-check  <span class="dim">pass</span>
 <span class="glyph-ok">●</span> typecheck  <span class="dim">pass</span>
 <span class="glyph-ok">●</span> trial-mount  <span class="dim">pass</span>
 <span class="glyph-ok">●</span> youtube-status mounted <span class="dim">· live</span>
-<span class="glyph-ok">●</span> youtube-status(video=dQw4w9WgXcQ)  <span class="dim">processed &middot; public &middot; 1.2k views</span></pre>
+<span class="glyph-ok">●</span> youtube-status(dQw4w9WgXcQ)  <span class="dim">processed &middot; 1.2k views</span></pre>
           </div>
         </div>
         <div class="capcopy">
@@ -146,23 +146,23 @@
             <div class="termtitle">crank</div>
           </div>
           <div class="termbody">
-            <pre class="termpre"><span class="term-userbox">I can't tell which of these three subagents is stuck</span>
+            <pre class="termpre"><span class="term-userbox">I keep opening the same four files to start</span>
 
-<span class="dim">  thought for 1.7s</span>
-<span class="glyph-ok">●</span> No view for that. I'll add one to the chrome, not just tell you.
-<span class="glyph-ok">●</span> patch(author --seam ui --name agent-tree)  <span class="dim">0.4s</span>
+<span class="dim">  thought for 1.5s</span>
+<span class="glyph-ok">●</span> No command for that. I'll add one, not a macro.
+<span class="glyph-ok">●</span> patch(author --seam ui --name warmup)  <span class="dim">0.4s</span>
 <span class="glyph-ok">●</span> boundary-check  <span class="dim">pass</span>
 <span class="glyph-ok">●</span> typecheck  <span class="dim">pass</span>
 <span class="glyph-ok">●</span> trial-mount  <span class="dim">pass</span>
-<span class="glyph-ok">●</span> agent-tree mounted <span class="dim">· live</span>
-<span class="dim"> ├─</span> <span class="glyph-run">●</span> refactor-auth      <span class="dim">running &middot; 12s</span>
-<span class="dim"> ├─</span> <span class="glyph-ok">●</span> migrate-billing    <span class="dim">done &middot; 8s</span>
-<span class="dim"> └─</span> <span class="glyph-warn">●</span> update-tests       <span class="dim">stuck &middot; waiting on lock</span></pre>
+<span class="glyph-ok">●</span> /warmup mounted <span class="dim">· live</span>
+
+<span class="term-userbox">/warmup</span>
+<span class="glyph-ok">●</span> Opened 4 files, same order, every time.</pre>
           </div>
         </div>
         <div class="capcopy">
-          <h3>The chrome you're reading this through</h3>
-          <p>Not another value in an existing view. A kind of view the interface didn't have a minute ago mounts into the running session, no restart, checked and trial-run first, and rolled back automatically if it misbehaves.</p>
+          <h3>Even the command set isn't fixed</h3>
+          <p>Not a saved macro. <code>/warmup</code> didn't exist a minute ago: crank wires a real command into the input itself, checked and trial-run first, and rolled back automatically if it misbehaves.</p>
         </div>
       </div>
 
@@ -176,19 +176,19 @@
             <pre class="termpre"><span class="term-userbox">verify after every edit, not batches of five</span>
 
 <span class="dim">  thought for 1.6s</span>
-<span class="glyph-ok">●</span> That's the loop shape for a flaky-test hunt, not a setting. Rewriting it.
-<span class="glyph-ok">●</span> patch(author --seam runtime --name verify-per-edit)  <span class="dim">0.4s</span>
+<span class="glyph-ok">●</span> A model can forget by turn ten. Wiring it in instead.
+<span class="glyph-ok">●</span> patch(author --seam runtime --name verify-loop)  <span class="dim">0.4s</span>
 <span class="glyph-ok">●</span> boundary-check  <span class="dim">pass</span>
 <span class="glyph-ok">●</span> typecheck  <span class="dim">pass</span>
 <span class="glyph-ok">●</span> trial-mount  <span class="dim">pass</span>
-<span class="glyph-ok">●</span> verify-per-edit patched <span class="dim">· live</span>
-<span class="runtimerow"><span class="label">loop</span><span class="val-old">edit &times;5, then test</span> <span class="val-new">edit, test, edit, test</span></span>
-<span class="runtimerow"><span class="label">turn time</span><span class="val-old">~5 min each</span> <span class="val-new">~40s each</span></span></pre>
+<span class="glyph-ok">●</span> verify-loop patched <span class="dim">· live</span>
+<span class="runtimerow"><span class="label">trigger</span><span class="val-old">model remembers to</span> <span class="val-new">fires on every edit</span></span>
+<span class="runtimerow"><span class="label">guarantee</span><span class="val-old">best effort</span> <span class="val-new">can't be skipped</span></span></pre>
           </div>
         </div>
         <div class="capcopy">
-          <h3>It tunes its own loop to the work</h3>
-          <p>The read, plan, edit, verify cycle isn't fixed. A flaky-test hunt wants verification after every change; a broad refactor wants it batched at the end. Crank rewrites the shape of its own loop for the kind of task in front of it, gated and trial-run the same as anything else.</p>
+          <h3>Not a reminder, a hook</h3>
+          <p>Telling a model to check more often is a suggestion it can forget three files later. Crank wires the check into its own tool-call scaffolding: it fires whether the model remembers or not, gated and trial-run the same as anything else.</p>
         </div>
       </div>
     </div>
