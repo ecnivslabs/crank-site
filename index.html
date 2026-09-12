@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Crank: the Universal AI Harness</title>
-<meta name="description" content="Crank is the Universal AI Harness: it writes its own tools, rewrites its own interface, and changes how it runs, live, and builds new capabilities before you even ask for them.">
+<title>Crank: the Shapeshifting AI Harness</title>
+<meta name="description" content="Crank is the Shapeshifting AI Harness: ask for a capability it doesn't have and it builds that into itself, live, writing its own tools, rewriting its own interface, and retuning how it runs to match.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
@@ -18,9 +18,9 @@
   </div>
 
   <div class="hero">
-    <div class="section-tag">The Universal AI Harness</div>
-    <h1>One harness<br>that <span class="hl">reshapes</span><br>itself.</h1>
-    <p class="sub">Every harness you've used was built by someone guessing at your work in advance: a fixed toolset, shipped once, extended by whatever plugins or MCP servers you bolt on after. Crank doesn't guess. It writes its own tools, rewrites its own interface, and changes how it runs, while a session is live, against whatever is actually in front of it.</p>
+    <div class="section-tag">The Shapeshifting AI Harness</div>
+    <h1>Ask for it.<br>It <span class="hl">becomes</span><br>that.</h1>
+    <p class="sub">Most harnesses ship with a fixed toolset: a set list of commands, extended later by whatever plugins or MCP servers you bolt on by hand. Crank skips the bolting-on. Ask for a video player and it writes one, mounts it, and the harness in front of you is a video editor now. Ask for something else tomorrow, and it's that instead.</p>
 
     <form class="waitlist" id="waitlist-form">
       <input type="text" name="name" placeholder="Full name" required>
@@ -34,7 +34,7 @@
   <div class="termwin">
     <div class="termbar">
       <div class="dot r"></div><div class="dot y"></div><div class="dot g"></div>
-      <div class="termtitle">crank</div>
+      <div class="termtitle">Crank</div>
     </div>
     <div class="termbody">
       <pre class="termpre"><span class="termbanner"><span class="dim"> v1.0.0</span>
@@ -44,25 +44,26 @@
 <span class="glyph-run">██║     ██╔══██╗██╔══██║██║╚██╗██║██╔═██╗ </span>
 <span class="glyph-run">╚██████╗██║  ██║██║  ██║██║ ╚████║██║  ██╗</span>
 <span class="glyph-run"> ╚═════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝</span>
-<span class="glyph-run">                high effort</span></span>
+<span class="glyph-run">                on demand</span></span>
 
-<span class="dim">  noticed a pattern &middot; last 8 calls</span>
-<span class="glyph-warn">●</span> Same retry-with-backoff written by hand 3 times.
-<span class="glyph-ok">●</span> Drafting a tool for it instead of a fourth copy.
-<span class="glyph-ok">●</span> patch(author --seam tool --name retry-with-backoff)  <span class="dim">0.4s</span>
-<span class="glyph-ok">●</span> boundary-check  <span class="dim">pass</span>
-<span class="glyph-ok">●</span> typecheck  <span class="dim">pass</span>
-<span class="glyph-ok">●</span> trial-mount  <span class="dim">pass</span>
-<span class="glyph-ok">●</span> retry-with-backoff mounted <span class="dim">· live</span>
+<span class="term-userbox">add a player so I can scrub through these takes</span>
+<span class="dim">  thought for 2.1s</span>
+<span class="dim">No player mounted. Building one, not a workaround.</span>
+<span class="glyph-ok">●</span> clip-player</pre>
+      <div class="tuiframe">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="12" r="10"></circle><path d="M10 8l6 4-6 4V8z" fill="currentColor" stroke="none"></path></svg>
+        <div class="tuitag">clip-player</div>
+        <div class="tuicaption">take_07.mov</div>
+        <div class="tuibar">
+          <span class="tuikeys">⏯ space</span>
+          <div class="tuitrack"><div class="tuifill" style="width:35%"></div></div>
+          <span class="tuitime">00:42 / 01:18</span>
+        </div>
+      </div>
+      <pre class="termpre"><span class="dim">⣿ Ran 5 tool calls  0.5s &middot; 340 tokens</span>
 
-<span class="term-userbox">nice, wire the webhook client through it too</span>
-
-<span class="dim">  thought for 2.4s</span>
-<span class="glyph-ok">●</span> Read(src/webhooks/client.ts)  <span class="dim">64 lines &middot; 0.1s</span>
-<span class="glyph-ok">●</span> Update(src/webhooks/client.ts)  <span class="dim">+6 -14 &middot; 0.2s</span>
-<span class="glyph-ok">●</span> Bash(bun test webhooks)  <span class="dim">7 passed &middot; 1.6s</span>
-
-<span class="glyph-run spinner-frame">⠋</span> Thinking&hellip; <span class="dim">(0:02 &middot; esc to interrupt)</span>
+<span class="term-userbox">honestly, just turn this into a full video editor at this point</span>
+<span class="glyph-run spinner-frame">⠴</span> Thinking&hellip; <span class="dim">(0:02 &middot; esc to interrupt)</span>
 
 <span class="prompt-ptr dim">❯</span> <span class="cursor-block">&nbsp;</span></pre>
     </div>
@@ -70,24 +71,25 @@
 
   <section class="manifesto">
     <div class="section-tag">The argument</div>
-    <h2>Extending by configuration is not the same as adapting.</h2>
-    <p class="lead">Plugins and MCP servers let you attach more of the same kind of thing to a harness that otherwise stays fixed. Someone still has to notice the gap, write the extension, and wire it in by hand, every time, for every harness that needs it.</p>
-    <p class="lead">Crank closes that loop itself. It watches its own behavior, writes a replacement when a fixed tool or a fixed interface is the wrong shape for the work, checks it against a real compiler, runs it once in a throwaway copy of the session to see what breaks, and only then lets it touch anything real. The same pipeline that builds a new tool also rewrites the interface you're reading it through and reconfigures how the session itself runs.</p>
+    <h2>Asking it to change is not the same as configuring it.</h2>
+    <p class="lead">Plugins and MCP servers let you bolt more of the same kind of thing onto a harness that otherwise stays fixed. You still have to find the extension, install it, and hope it fits the shape of the work in front of you. Crank skips the search: tell it what you need, and it builds that into itself, live.</p>
+    <p class="lead">Say you're cutting video and ask for a player so you can scrub through takes. Crank writes the player, checks it against a real compiler, trial-runs it in a throwaway copy of the session, and mounts it, no restart required. Ask for a timeline next and it adds that too. Enough requests like that, and the harness you started with is a video editor now, built one ask at a time.</p>
+    <p class="lead">It also keeps half an eye on its own tool calls: catch it hand-building the same thing three times and it'll write the tool without waiting to be asked. That's a bonus habit, not the pitch. The pitch is that you ask, and it becomes what you asked for.</p>
   </section>
 
   <div class="bignum">
     <div class="n">64%</div>
-    <div class="t">fewer fixed-overhead tokens per turn than eager-loading every tool and skill: a single-domain session only pays for what it uses.</div>
+    <div class="t">fewer fixed-overhead tokens per turn than eager-loading every tool and skill up front: a harness that only pays for the shape it's actually been asked to take.</div>
   </div>
 
   <section class="capabilities" data-tabgroup="capabilities">
     <div class="section-tag">In practice</div>
-    <h2>What could Crank do?</h2>
-    <p class="lead">Ask, and Crank builds the tool, rewrites the interface, or retunes the loop for it. Catch it repeating itself and it does the first one without waiting to be asked. Either way, every change is gated, typechecked against your real compiler, and trial-run in a throwaway copy of your session before it touches anything real.</p>
+    <h2>What can you turn Crank into?</h2>
+    <p class="lead">Ask, and Crank builds the tool, mounts the panel, or retunes the loop to match. Every change is gated the same way: boundary-checked, typechecked against your real compiler, and trial-run in a throwaway copy of your session before it touches anything real.</p>
 
     <div class="cappills">
       <button class="pill active" data-tab="coding">Code</button>
-      <button class="pill" data-tab="notices">Build tools unprompted</button>
+      <button class="pill" data-tab="reshape">Become a new app</button>
       <button class="pill" data-tab="interface">Rewrite its own interface</button>
       <button class="pill" data-tab="runtime">Tune its own loop</button>
     </div>
@@ -97,45 +99,49 @@
         <div class="capwindow">
           <div class="termbar">
             <div class="dot r"></div><div class="dot y"></div><div class="dot g"></div>
-            <div class="termtitle">crank</div>
+            <div class="termtitle">Crank</div>
           </div>
           <div class="termbody">
             <pre class="termpre"><span class="term-userbox">the search endpoint is slow under load</span>
-
 <span class="dim">  thought for 3.4s</span>
-<span class="glyph-ok">●</span> Bash(profile --route /search)  <span class="dim">3.2s samples</span>
-<span class="glyph-ok">●</span> Read(src/search/query.ts)  <span class="dim">140 lines &middot; 0.1s</span>
-<span class="glyph-ok">●</span> Update(src/search/query.ts)  <span class="dim">+11 -3 &middot; 0.2s</span>
-<span class="glyph-ok">●</span> Bash(bun test search)  <span class="dim">9 passed &middot; 1.2s</span></pre>
+<span class="dim">Profiled the route, found the slow query.</span>
+<span class="glyph-ok">●</span> query.ts
+
+<span class="dim">⣿ Ran 4 tool calls  1.2s &middot; 290 tokens</span>
+
+<span class="prompt-ptr dim">❯</span> <span class="cursor-block">&nbsp;</span></pre>
           </div>
         </div>
         <div class="capcopy">
           <h3>The daily work</h3>
-          <p>Real diagnostics, real profiling, real test runs. The baseline every session starts from, before anything gets built on top of it.</p>
+          <p>Real diagnostics, real profiling, real test runs. The baseline every session starts from, before you ask it to become anything else.</p>
         </div>
       </div>
 
-      <div class="capgroup" data-panel="notices" hidden>
+      <div class="capgroup" data-panel="reshape" hidden>
         <div class="capwindow">
           <div class="termbar">
             <div class="dot r"></div><div class="dot y"></div><div class="dot g"></div>
-            <div class="termtitle">crank</div>
+            <div class="termtitle">Crank</div>
           </div>
           <div class="termbody">
-            <pre class="termpre"><span class="dim">  noticed a pattern &middot; last 8 calls</span>
-<span class="glyph-warn">●</span> Same YouTube API call built by hand 3 times.
-<span class="glyph-ok">●</span> Writing a real client instead of a fourth copy-paste.
-<span class="glyph-ok">●</span> patch(author --seam tool --name youtube-status)  <span class="dim">0.6s</span>
-<span class="glyph-ok">●</span> boundary-check  <span class="dim">pass</span>
-<span class="glyph-ok">●</span> typecheck  <span class="dim">pass</span>
-<span class="glyph-ok">●</span> trial-mount  <span class="dim">pass</span>
-<span class="glyph-ok">●</span> youtube-status mounted <span class="dim">· live</span>
-<span class="glyph-ok">●</span> youtube-status(dQw4w9WgXcQ)  <span class="dim">processed &middot; 1.2k views</span></pre>
+            <pre class="termpre"><span class="term-userbox">add a live p95 latency chart</span>
+<span class="dim">  thought for 1.4s</span>
+<span class="dim">No chart mounted. Building one, not a grep.</span>
+<span class="glyph-ok">●</span> latency-chart</pre>
+            <div class="chartpanel">
+              <div class="chartitle">latency-chart &middot; p95 &middot; last 15m</div>
+              <div class="sparkline">▂▃▄▆▇█▇▆▅▄▃▂▃▅▇</div>
+              <div class="chartstat"><span class="val">214ms now</span><span class="delta">&uarr; 12% vs 1h ago</span></div>
+            </div>
+            <pre class="termpre"><span class="dim">⣿ Ran 5 tool calls  0.4s &middot; 310 tokens</span>
+
+<span class="prompt-ptr dim">❯</span> <span class="cursor-block">&nbsp;</span></pre>
           </div>
         </div>
         <div class="capcopy">
-          <h3>It doesn't wait for a request</h3>
-          <p>Crank watches its own tool calls, not just its own commands. Catch it hand-building the same API client three times, auth and parsing included, and it writes a real tool for it, gated the same as anything else. No one asked for it.</p>
+          <h3>Ask for a piece, get the app</h3>
+          <p>Say the word and Crank builds the missing piece into itself: a chart, a diff view, a player, whatever the work in front of you needs, rendered right there in the terminal. Ask for enough pieces and the harness you opened is a different app now.</p>
         </div>
       </div>
 
@@ -143,26 +149,25 @@
         <div class="capwindow">
           <div class="termbar">
             <div class="dot r"></div><div class="dot y"></div><div class="dot g"></div>
-            <div class="termtitle">crank</div>
+            <div class="termtitle">Crank</div>
           </div>
           <div class="termbody">
             <pre class="termpre"><span class="term-userbox">I keep opening the same four files to start</span>
-
 <span class="dim">  thought for 1.5s</span>
-<span class="glyph-ok">●</span> No command for that. I'll add one, not a macro.
-<span class="glyph-ok">●</span> patch(author --seam ui --name warmup)  <span class="dim">0.4s</span>
-<span class="glyph-ok">●</span> boundary-check  <span class="dim">pass</span>
-<span class="glyph-ok">●</span> typecheck  <span class="dim">pass</span>
-<span class="glyph-ok">●</span> trial-mount  <span class="dim">pass</span>
-<span class="glyph-ok">●</span> /warmup mounted <span class="dim">· live</span>
+<span class="dim">Not a macro. I'm adding a real command.</span>
+<span class="glyph-ok">●</span> /warmup
+
+<span class="dim">⣿ Ran 5 tool calls  0.4s &middot; 260 tokens</span>
 
 <span class="term-userbox">/warmup</span>
-<span class="glyph-ok">●</span> Opened 4 files, same order, every time.</pre>
+<span class="glyph-ok">●</span> src/index.ts, src/db.ts  <span class="dim">+2 more &middot; 0.1s</span>
+
+<span class="prompt-ptr dim">❯</span> <span class="cursor-block">&nbsp;</span></pre>
           </div>
         </div>
         <div class="capcopy">
           <h3>Even the command set isn't fixed</h3>
-          <p>Not a saved macro. <code>/warmup</code> didn't exist a minute ago: Crank wires a real command into the input itself, checked and trial-run first, and rolled back automatically if it misbehaves.</p>
+          <p>Not a saved macro. <code>/warmup</code> didn't exist a minute ago: ask, and Crank wires a real command into the input itself, checked and trial-run first, and rolled back automatically if it misbehaves.</p>
         </div>
       </div>
 
@@ -170,41 +175,40 @@
         <div class="capwindow">
           <div class="termbar">
             <div class="dot r"></div><div class="dot y"></div><div class="dot g"></div>
-            <div class="termtitle">crank</div>
+            <div class="termtitle">Crank</div>
           </div>
           <div class="termbody">
             <pre class="termpre"><span class="term-userbox">verify after every edit, not batches of five</span>
-
 <span class="dim">  thought for 1.6s</span>
-<span class="glyph-ok">●</span> A model can forget by turn ten. Wiring it in instead.
-<span class="glyph-ok">●</span> patch(author --seam runtime --name verify-loop)  <span class="dim">0.4s</span>
-<span class="glyph-ok">●</span> boundary-check  <span class="dim">pass</span>
-<span class="glyph-ok">●</span> typecheck  <span class="dim">pass</span>
-<span class="glyph-ok">●</span> trial-mount  <span class="dim">pass</span>
-<span class="glyph-ok">●</span> verify-loop patched <span class="dim">· live</span>
+<span class="dim">A model can forget by turn ten. Wiring it in.</span>
+<span class="glyph-ok">●</span> verify-loop
 <span class="runtimerow"><span class="label">trigger</span><span class="val-old">model remembers to</span> <span class="val-new">fires on every edit</span></span>
-<span class="runtimerow"><span class="label">guarantee</span><span class="val-old">best effort</span> <span class="val-new">can't be skipped</span></span></pre>
+<span class="runtimerow"><span class="label">guarantee</span><span class="val-old">best effort</span> <span class="val-new">can't be skipped</span></span>
+
+<span class="dim">⣿ Ran 4 tool calls  0.4s &middot; 250 tokens</span>
+
+<span class="prompt-ptr dim">❯</span> <span class="cursor-block">&nbsp;</span></pre>
           </div>
         </div>
         <div class="capcopy">
           <h3>Not a reminder, a hook</h3>
-          <p>Telling a model to check more often is a suggestion it can forget three files later. Crank wires the check into its own tool-call scaffolding: it fires whether the model remembers or not, gated and trial-run the same as anything else.</p>
+          <p>Telling a model to check more often is a suggestion it can forget three files later. Ask once, and Crank wires the check into its own tool-call scaffolding: it fires whether the model remembers or not.</p>
         </div>
       </div>
     </div>
   </section>
 
   <div class="grid3">
-    <div><h3>Building tools unprompted</h3><p>Notices when it's repeating itself and writes a real script for it, not a shortcut, without being asked.</p></div>
+    <div><h3>Reshapes on request</h3><p>Ask for a capability it doesn't have and Crank builds it into itself: a panel, a tool, a command, whatever the work calls for, mounted live.</p></div>
     <div><h3>Rewriting its own interface</h3><p>New panels and commands mount into a live session, no restart, with automatic rollback if a change misbehaves.</p></div>
     <div><h3>Engineering-grade</h3><p>Real LSP diagnostics, real typecheck gates, real test runs. Eight providers with automatic failover if one goes down mid-session.</p></div>
-    <div><h3>Honest by default</h3><p>Same doctrine every session: real implementations, no placeholders, no silent failures. A bad approach gets called out, not smoothed over.</p></div>
+    <div><h3>Honest by default</h3><p>Same doctrine every session: real implementations, no placeholders, no silent failures. A bad approach gets called out, not smoothed over. It'll also flag when you're repeating yourself, uninvited.</p></div>
   </div>
 
   <section class="feature">
     <div class="section-tag">Join the waitlist</div>
-    <h2>An agent that extends itself, without waiting to be asked</h2>
-    <p class="lead">Every change goes through the same gate: a boundary check keeps generated code out of Crank's own internals, an incremental typecheck runs against your real compiler, and a trial run happens in a throwaway copy of your session before anything touches the real one. Only then does it go live; persist it once and it survives restarts. And Crank doesn't only wait for a prompt: it watches its own tool calls, and if it catches itself doing the same manual thing three times in a row, it builds the tool instead of a fourth copy.</p>
+    <h2>An agent that becomes what you ask it to be</h2>
+    <p class="lead">Every change goes through the same gate: a boundary check keeps generated code out of Crank's own internals, an incremental typecheck runs against your real compiler, and a trial run happens in a throwaway copy of your session before anything touches the real one. Only then does it go live; persist it once and it survives restarts. Ask for a player and get a video editor. Ask for a dashboard panel and get a different tool entirely. And yes, it also keeps an eye on its own tool calls: catch it doing the same manual thing three times in a row, and it'll build the tool without being asked. That's the bonus. The point is that you ask, and Crank becomes it.</p>
 
     <form class="waitlist" id="waitlist-form-2">
       <input type="text" name="name" placeholder="Full name" required>

@@ -42,6 +42,7 @@ form.waitlist button:disabled{opacity:0.6;cursor:default;}
 .glyph-ok{color:var(--term-success);}
 .glyph-warn{color:var(--term-warning);}
 .glyph-run{color:var(--term-teal);}
+.glyph-accent{color:var(--accent);}
 .dim{color:var(--term-muted);}
 .termpre{margin:0;white-space:pre;color:var(--term-fg);}
 .termbanner{line-height:1.15;}
@@ -50,6 +51,25 @@ form.waitlist button:disabled{opacity:0.6;cursor:default;}
 .prompt-ptr.dim{color:var(--term-muted);}
 .cursor-block{display:inline-block;width:7px;background:var(--term-fg);animation:term-blink 1s steps(1) infinite;}
 @keyframes term-blink{50%,100%{opacity:0;}}
+
+.termwin .termbody{line-height:1.45;}
+
+.tuiframe{position:relative;margin:16px 0;max-width:380px;aspect-ratio:16/9;background:#17181a;border:1px solid var(--term-subtle);display:flex;align-items:center;justify-content:center;}
+.tuiframe svg{width:34px;height:34px;color:#fff;opacity:0.92;}
+.tuiframe .tuitag{position:absolute;top:7px;right:9px;font-family:var(--mono);font-size:10px;color:var(--term-teal);letter-spacing:0.05em;}
+.tuiframe .tuicaption{position:absolute;left:9px;top:7px;font-family:var(--mono);font-size:11px;color:var(--term-muted);}
+.tuiframe .tuibar{position:absolute;left:0;right:0;bottom:0;display:flex;align-items:center;gap:9px;padding:6px 9px;background:rgba(0,0,0,0.55);}
+.tuiframe .tuikeys{font-family:var(--mono);font-size:10.5px;color:#a8a8a8;white-space:nowrap;}
+.tuiframe .tuitrack{position:relative;flex:1;height:3px;background:rgba(255,255,255,0.22);}
+.tuiframe .tuifill{position:absolute;left:0;top:0;bottom:0;background:var(--accent);}
+.tuiframe .tuitime{font-family:var(--mono);font-size:10.5px;color:#d8d8d8;white-space:nowrap;}
+
+.chartpanel{margin:16px 0;max-width:380px;border:1px solid var(--term-subtle);padding:14px 16px;}
+.chartpanel .chartitle{font-family:var(--mono);font-size:11px;color:var(--term-muted);letter-spacing:0.04em;margin-bottom:10px;}
+.chartpanel .sparkline{font-family:var(--mono);font-size:26px;letter-spacing:2px;line-height:1;color:var(--term-teal);margin-bottom:10px;}
+.chartpanel .chartstat{display:flex;justify-content:space-between;font-family:var(--mono);font-size:12px;}
+.chartpanel .chartstat .val{color:var(--term-fg);}
+.chartpanel .chartstat .delta{color:var(--term-warning);}
 
 .runtimerow{display:block;}
 .runtimerow .label{color:var(--term-muted);display:inline-block;width:80px;}
