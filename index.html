@@ -44,7 +44,7 @@
 <span class="glyph-run">██║     ██╔══██╗██╔══██║██║╚██╗██║██╔═██╗ </span>
 <span class="glyph-run">╚██████╗██║  ██║██║  ██║██║ ╚████║██║  ██╗</span>
 <span class="glyph-run"> ╚═════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝</span>
-<span class="glyph-run">                on demand</span></span><span class="termbanner-compact">Crank v1.0.0 &middot; on demand</span>
+<span class="glyph-run">                high effort</span></span>
 
 <span class="term-userbox">add a player so I can scrub through these takes</span>
 <span class="dim">  thought for 2.1s</span>
@@ -89,7 +89,7 @@
 
     <div class="cappills">
       <button class="pill active" data-tab="coding">Code</button>
-      <button class="pill" data-tab="reshape">Become a new app</button>
+      <button class="pill" data-tab="reshape">Reshape into a new app</button>
       <button class="pill" data-tab="interface">Rewrite its own interface</button>
       <button class="pill" data-tab="runtime">Tune its own loop</button>
     </div>
@@ -125,23 +125,48 @@
             <div class="termtitle">Crank</div>
           </div>
           <div class="termbody">
-            <pre class="termpre"><span class="term-userbox">add a live p95 latency chart</span>
-<span class="dim">  thought for 1.4s</span>
-<span class="dim">No chart mounted. Building one, not a grep.</span>
-<span class="glyph-ok">●</span> latency-chart</pre>
-            <div class="chartpanel">
-              <div class="chartitle">latency-chart &middot; p95 &middot; last 15m</div>
-              <div class="sparkline">▂▃▄▆▇█▇▆▅▄▃▂▃▅▇</div>
-              <div class="chartstat"><span class="val">214ms now</span><span class="delta">&uarr; 12% vs 1h ago</span></div>
+            <pre class="termpre"><span class="term-userbox">turn this into a live watchlist, not numbers in a log</span>
+<span class="dim">  thought for 1.8s</span>
+<span class="dim">No market view mounted. Building one, not a ticker of text.</span>
+<span class="glyph-ok">●</span> market-view</pre>
+            <div class="marketview">
+              <div class="ticker-tape">
+                <span class="ticker-item">HOOK <span class="up">&#9650; 2.4%</span></span>
+                <span class="ticker-item">PANL <span class="down">&#9660; 0.6%</span></span>
+                <span class="ticker-item">LOOP <span class="up">&#9650; 1.1%</span></span>
+                <span class="ticker-item">MRGE <span class="down">&#9660; 3.2%</span></span>
+              </div>
+              <div class="watchlist">
+                <div class="wl-row">
+                  <span class="wl-sym">HOOK</span><span class="wl-name">Hook Systems</span>
+                  <svg class="wl-spark" viewBox="0 0 60 20" preserveAspectRatio="none"><polyline points="0,16 10,14 20,15 30,9 40,6 50,8 60,3" fill="none" stroke="var(--term-teal)" stroke-width="1.5"></polyline></svg>
+                  <span class="wl-price">142.18</span><span class="wl-delta up">&#9650; 2.4%</span>
+                </div>
+                <div class="wl-row">
+                  <span class="wl-sym">PANL</span><span class="wl-name">Panel Corp</span>
+                  <svg class="wl-spark" viewBox="0 0 60 20" preserveAspectRatio="none"><polyline points="0,5 10,7 20,6 30,11 40,10 50,14 60,17" fill="none" stroke="#ff5f57" stroke-width="1.5"></polyline></svg>
+                  <span class="wl-price">88.42</span><span class="wl-delta down">&#9660; 0.6%</span>
+                </div>
+                <div class="wl-row">
+                  <span class="wl-sym">LOOP</span><span class="wl-name">Loop Robotics</span>
+                  <svg class="wl-spark" viewBox="0 0 60 20" preserveAspectRatio="none"><polyline points="0,12 10,13 20,9 30,10 40,5 50,7 60,4" fill="none" stroke="var(--term-teal)" stroke-width="1.5"></polyline></svg>
+                  <span class="wl-price">301.05</span><span class="wl-delta up">&#9650; 1.1%</span>
+                </div>
+                <div class="wl-row">
+                  <span class="wl-sym">MRGE</span><span class="wl-name">Merge Analytics</span>
+                  <svg class="wl-spark" viewBox="0 0 60 20" preserveAspectRatio="none"><polyline points="0,4 10,6 20,10 30,9 40,13 50,15 60,18" fill="none" stroke="#ff5f57" stroke-width="1.5"></polyline></svg>
+                  <span class="wl-price">54.77</span><span class="wl-delta down">&#9660; 3.2%</span>
+                </div>
+              </div>
             </div>
-            <pre class="termpre"><span class="dim">⣿ Ran 5 tool calls  0.4s &middot; 310 tokens</span>
+            <pre class="termpre"><span class="dim">⣿ Ran 5 tool calls  0.5s &middot; 320 tokens</span>
 
 <span class="prompt-ptr dim">❯</span> <span class="cursor-block">&nbsp;</span></pre>
           </div>
         </div>
         <div class="capcopy">
-          <h3>Ask for a piece, get the app</h3>
-          <p>Say the word and Crank builds the missing piece into itself: a chart, a diff view, a player, whatever the work in front of you needs, rendered right there in the terminal. Ask for enough pieces and the harness you opened is a different app now.</p>
+          <h3>Ask for it. It becomes the app.</h3>
+          <p>Say what you actually need, and Crank doesn't bolt on a single chart: it builds the whole screen, a ticker tape, a watchlist, sparklines, mounted together in the same terminal. You ask for the app; it becomes that app.</p>
         </div>
       </div>
 
@@ -152,22 +177,33 @@
             <div class="termtitle">Crank</div>
           </div>
           <div class="termbody">
-            <pre class="termpre"><span class="term-userbox">I keep opening the same four files to start</span>
-<span class="dim">  thought for 1.5s</span>
-<span class="dim">Not a macro. I'm adding a real command.</span>
-<span class="glyph-ok">●</span> /warmup
-
-<span class="dim">⣿ Ran 5 tool calls  0.4s &middot; 260 tokens</span>
-
-<span class="term-userbox">/warmup</span>
-<span class="glyph-ok">●</span> src/index.ts, src/db.ts  <span class="dim">+2 more &middot; 0.1s</span>
+            <pre class="termpre"><span class="term-userbox">I keep scrolling up to check which files we've touched</span>
+<span class="dim">  thought for 1.2s</span>
+<span class="dim">Not another log line. Pinning the file list instead.</span>
+<span class="glyph-ok">●</span> file-rail, status-bar</pre>
+          </div>
+          <div class="ideshell">
+            <div class="ideshell-body">
+              <div class="ideshell-rail">
+                <div class="rail-label">Touched this session</div>
+                <div class="rail-item">query.ts</div>
+                <div class="rail-item">db.ts</div>
+                <div class="rail-item">index.ts</div>
+              </div>
+              <div class="ideshell-main">
+                <pre class="termpre"><span class="dim">⣿ Ran 3 tool calls  0.3s &middot; 210 tokens</span>
 
 <span class="prompt-ptr dim">❯</span> <span class="cursor-block">&nbsp;</span></pre>
+              </div>
+            </div>
+            <div class="ideshell-status">
+              <span>main</span><span class="dim">&middot;</span><span>Sonnet 5</span><span class="dim">&middot;</span><span>3 files changed</span><span class="dim">&middot;</span><span>12.4k tokens</span>
+            </div>
           </div>
         </div>
         <div class="capcopy">
-          <h3>Even the command set isn't fixed</h3>
-          <p>Not a saved macro. <code>/warmup</code> didn't exist a minute ago: ask, and Crank wires a real command into the input itself, checked and trial-run first, and rolled back automatically if it misbehaves.</p>
+          <h3>Ask for it. It becomes the interface you need.</h3>
+          <p>Say you're tired of scrolling up to remember which files are in play, and Crank doesn't just answer in text: it pins a running file list to the side and a branch, model, and token count to the bottom, so both stay visible no matter how far the conversation scrolls.</p>
         </div>
       </div>
 
